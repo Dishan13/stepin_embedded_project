@@ -1,21 +1,22 @@
-
- #include "activity1.h"
+#include "activity1.h"
 
 
 void peripheral_init(void)
 {
-	DDRD |= (1<<PD2); // set PD2=1 for LED
+    DDRD |= (1<<PD2); // set PD2=1 for LED
     DDRD &= ~(1<<PD0); //clear bit
     PORTD |= (1<<PD0); //set bit PD0 for SeatSwitch
     DDRD &= ~(1<<PD1); //clear bit
     PORTD |= (1<<PD1); //set bit PD0 for HeaterSwitch
 }
 
-void TurnLED_ON(){
+void TurnLED_ON()
+{
     LED_PORT |= (1<<LED_PIN);
 }
 
-void TurnLED_OFF(){
+void TurnLED_OFF()
+{
     LED_PORT &= ~(1<<LED_PIN);
 }
 
@@ -27,7 +28,7 @@ int activity1_LED(void)
         {
             act1=1;
         }
-        else  //in all other cases
+        else  
         {
             act1=0;
         }
