@@ -7,7 +7,7 @@ FOLDER	DESCRIPTION
 1. Requirement     :	All requirements and research are included
 2. Design	         :  Specification of design details
 3. Implementation  :  Code documentation
-4. Test	           :  Test plans and procedure
+4. Images          :  Images of simulated code usinh SimulIDE
 
 
 # RESOURCE AND REFERENCES
